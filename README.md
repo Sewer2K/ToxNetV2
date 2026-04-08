@@ -9,6 +9,9 @@
 ## ⚠️ Legal Disclaimer
 **This tool is for educational and authorized security testing purposes only. Unauthorized use of this software for attacking systems without consent is illegal. The authors assume no liability for misuse or damage caused by this software.**
 
+<img width="517" height="184" alt="image" src="https://github.com/user-attachments/assets/81802ce7-fe70-4e20-b463-953bec380dc4" />
+
+
 ---
 ## 🎯 Overview
 **Toxnet** is a modern, decentralized Command and Control (C2) framework built on the Tox encrypted messaging protocol. Unlike traditional HTTP-based C2 infrastructure that relies on central servers vulnerable to seizure and monitoring, ToxNetV2 operates on a peer-to-peer network where every node acts as both a potential relay and endpoint.
