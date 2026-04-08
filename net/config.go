@@ -1,7 +1,7 @@
 package net
 
 // Admin public keys
-var Admins = []string{"YOUR QTOX ID HERE RETARD NIGGER"}
+var Admins = []string{"YOUR QTOX ID HERE"}
 
 // C2 Private Key
 var Tox_key = "./c2.data"
