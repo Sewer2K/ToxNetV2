@@ -49,9 +49,6 @@ This architecture makes the system inherently resistant to censorship, network m
 - PPC64EL
 - S390X
 
-**Windows:**
-- x86_64 binaries via MinGW-w64 cross-compilation
-
 ---
 ## ⚔️ Attack Modules
 ### UDP Attacks
