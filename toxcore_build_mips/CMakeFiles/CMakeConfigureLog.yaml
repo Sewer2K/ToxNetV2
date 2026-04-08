@@ -1,0 +1,612 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:19 (project)"
+    message: |
+      The system is: Linux - 6.17.0-19-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:19 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/mips-linux-gnu-gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:19 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/mips-linux-gnu-g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:19 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-miBKR2"
+      binary: "/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-miBKR2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-miBKR2'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0dc4d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0dc4d.dir/build.make CMakeFiles/cmTC_0dc4d.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-miBKR2'
+        Building C object CMakeFiles/cmTC_0dc4d.dir/CMakeCCompilerABI.c.o
+        /usr/bin/mips-linux-gnu-gcc   -v -o CMakeFiles/cmTC_0dc4d.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/mips-linux-gnu-gcc
+        Target: mips-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 12.4.0-2ubuntu1~24.04' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libsanitizer --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --enable-libphobos-checking=release --without-target-system-zlib --enable-multiarch --disable-werror --enable-multilib --with-arch-32=mips32r2 --with-fp-32=xx --with-lxc1-sxc1=no --enable-targets=all --with-arch-64=mips64r2 --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=mips-linux-gnu --program-prefix=mips-linux-gnu- --includedir=/usr/mips-linux-gnu/include
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 12.4.0 (Ubuntu 12.4.0-2ubuntu1~24.04) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0dc4d.dir/CMakeCCompilerABI.c.o' '-c' '-march=mips32r2' '-mfpxx' '-mllsc' '-mno-lxc1-sxc1' '-mips32r2' '-mno-shared' '-EB' '-mabi=32' '-dumpdir' 'CMakeFiles/cmTC_0dc4d.dir/'
+         /usr/lib/gcc-cross/mips-linux-gnu/12/cc1 -quiet -v -imultiarch mips-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -D_TIME_BITS=64 -D_FILE_OFFSET_BITS=64 -meb -quiet -dumpdir CMakeFiles/cmTC_0dc4d.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -march=mips32r2 -mfpxx -mllsc -mno-lxc1-sxc1 -mips32r2 -mno-shared -mabi=32 -version -fstack-protector-strong -Wformat -Wformat-security -o /tmp/ccQUYmfh.s
+        GNU C17 (Ubuntu 12.4.0-2ubuntu1~24.04) version 12.4.0 (mips-linux-gnu)
+        	compiled by GNU C version 12.4.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/mips-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc-cross/mips-linux-gnu/12/include-fixed"
+        ignoring nonexistent directory "/usr/include/mips-linux-gnu"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc-cross/mips-linux-gnu/12/include
+         /usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/include
+         /usr/include
+        End of search list.
+        GNU C17 (Ubuntu 12.4.0-2ubuntu1~24.04) version 12.4.0 (mips-linux-gnu)
+        	compiled by GNU C version 12.4.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 5e0de7c21d32da8b0ec266da15b8ec32
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0dc4d.dir/CMakeCCompilerABI.c.o' '-c' '-march=mips32r2' '-mfpxx' '-mllsc' '-mno-lxc1-sxc1' '-mips32r2' '-mno-shared' '-EB' '-mabi=32' '-dumpdir' 'CMakeFiles/cmTC_0dc4d.dir/'
+         /usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/bin/as -v -EB -mips32r2 -O1 -mabi=32 -march=mips32r2 -mfpxx -mno-shared -KPIC -o CMakeFiles/cmTC_0dc4d.dir/CMakeCCompilerABI.c.o /tmp/ccQUYmfh.s
+        GNU assembler version 2.42 (mips-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/:/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/:/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/bin/
+        LIBRARY_PATH=/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/:/lib/mips-linux-gnu/:/lib/../lib/:/usr/lib/mips-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0dc4d.dir/CMakeCCompilerABI.c.o' '-c' '-march=mips32r2' '-mfpxx' '-mllsc' '-mno-lxc1-sxc1' '-mips32r2' '-mno-shared' '-EB' '-mabi=32' '-dumpdir' 'CMakeFiles/cmTC_0dc4d.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_0dc4d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0dc4d.dir/link.txt --verbose=1
+        /usr/bin/mips-linux-gnu-gcc  -v CMakeFiles/cmTC_0dc4d.dir/CMakeCCompilerABI.c.o -o cmTC_0dc4d 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/mips-linux-gnu-gcc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc-cross/mips-linux-gnu/12/lto-wrapper
+        Target: mips-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 12.4.0-2ubuntu1~24.04' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libsanitizer --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --enable-libphobos-checking=release --without-target-system-zlib --enable-multiarch --disable-werror --enable-multilib --with-arch-32=mips32r2 --with-fp-32=xx --with-lxc1-sxc1=no --enable-targets=all --with-arch-64=mips64r2 --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=mips-linux-gnu --program-prefix=mips-linux-gnu- --includedir=/usr/mips-linux-gnu/include
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 12.4.0 (Ubuntu 12.4.0-2ubuntu1~24.04) 
+        COMPILER_PATH=/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/:/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/:/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/bin/
+        LIBRARY_PATH=/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/:/lib/mips-linux-gnu/:/lib/../lib/:/usr/lib/mips-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0dc4d' '-march=mips32r2' '-mfpxx' '-mllsc' '-mno-lxc1-sxc1' '-mips32r2' '-mno-shared' '-EB' '-mabi=32' '-dumpdir' 'cmTC_0dc4d.'
+         /usr/lib/gcc-cross/mips-linux-gnu/12/collect2 -plugin /usr/lib/gcc-cross/mips-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc-cross/mips-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGiyn8N.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -EB -mips32r2 --as-needed -dynamic-linker /lib/ld.so.1 -melf32btsmip -z relro -o cmTC_0dc4d /usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crt1.o /usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crti.o /usr/lib/gcc-cross/mips-linux-gnu/12/crtbegin.o -L/usr/lib/gcc-cross/mips-linux-gnu/12 -L/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib -L/lib/mips-linux-gnu -L/lib/../lib -L/usr/lib/mips-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib CMakeFiles/cmTC_0dc4d.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc-cross/mips-linux-gnu/12/crtend.o /usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0dc4d' '-march=mips32r2' '-mfpxx' '-mllsc' '-mno-lxc1-sxc1' '-mips32r2' '-mno-shared' '-EB' '-mabi=32' '-dumpdir' 'cmTC_0dc4d.'
+        gmake[1]: Leaving directory '/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-miBKR2'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:19 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc-cross/mips-linux-gnu/12/include]
+          add: [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc-cross/mips-linux-gnu/12/include] ==> [/usr/lib/gcc-cross/mips-linux-gnu/12/include]
+        collapse include dir [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/include] ==> [/usr/mips-linux-gnu/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc-cross/mips-linux-gnu/12/include;/usr/mips-linux-gnu/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:19 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(mips-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-miBKR2']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0dc4d/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_0dc4d.dir/build.make CMakeFiles/cmTC_0dc4d.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-miBKR2']
+        ignore line: [Building C object CMakeFiles/cmTC_0dc4d.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/mips-linux-gnu-gcc   -v -o CMakeFiles/cmTC_0dc4d.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/mips-linux-gnu-gcc]
+        ignore line: [Target: mips-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 12.4.0-2ubuntu1~24.04' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libsanitizer --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --enable-libphobos-checking=release --without-target-system-zlib --enable-multiarch --disable-werror --enable-multilib --with-arch-32=mips32r2 --with-fp-32=xx --with-lxc1-sxc1=no --enable-targets=all --with-arch-64=mips64r2 --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=mips-linux-gnu --program-prefix=mips-linux-gnu- --includedir=/usr/mips-linux-gnu/include]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 12.4.0 (Ubuntu 12.4.0-2ubuntu1~24.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0dc4d.dir/CMakeCCompilerABI.c.o' '-c' '-march=mips32r2' '-mfpxx' '-mllsc' '-mno-lxc1-sxc1' '-mips32r2' '-mno-shared' '-EB' '-mabi=32' '-dumpdir' 'CMakeFiles/cmTC_0dc4d.dir/']
+        ignore line: [ /usr/lib/gcc-cross/mips-linux-gnu/12/cc1 -quiet -v -imultiarch mips-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -D_TIME_BITS=64 -D_FILE_OFFSET_BITS=64 -meb -quiet -dumpdir CMakeFiles/cmTC_0dc4d.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -march=mips32r2 -mfpxx -mllsc -mno-lxc1-sxc1 -mips32r2 -mno-shared -mabi=32 -version -fstack-protector-strong -Wformat -Wformat-security -o /tmp/ccQUYmfh.s]
+        ignore line: [GNU C17 (Ubuntu 12.4.0-2ubuntu1~24.04) version 12.4.0 (mips-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.4.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/mips-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc-cross/mips-linux-gnu/12/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/include/mips-linux-gnu"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc-cross/mips-linux-gnu/12/include]
+        ignore line: [ /usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (Ubuntu 12.4.0-2ubuntu1~24.04) version 12.4.0 (mips-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.4.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 5e0de7c21d32da8b0ec266da15b8ec32]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0dc4d.dir/CMakeCCompilerABI.c.o' '-c' '-march=mips32r2' '-mfpxx' '-mllsc' '-mno-lxc1-sxc1' '-mips32r2' '-mno-shared' '-EB' '-mabi=32' '-dumpdir' 'CMakeFiles/cmTC_0dc4d.dir/']
+        ignore line: [ /usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/bin/as -v -EB -mips32r2 -O1 -mabi=32 -march=mips32r2 -mfpxx -mno-shared -KPIC -o CMakeFiles/cmTC_0dc4d.dir/CMakeCCompilerABI.c.o /tmp/ccQUYmfh.s]
+        ignore line: [GNU assembler version 2.42 (mips-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/:/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/:/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/:/lib/mips-linux-gnu/:/lib/../lib/:/usr/lib/mips-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0dc4d.dir/CMakeCCompilerABI.c.o' '-c' '-march=mips32r2' '-mfpxx' '-mllsc' '-mno-lxc1-sxc1' '-mips32r2' '-mno-shared' '-EB' '-mabi=32' '-dumpdir' 'CMakeFiles/cmTC_0dc4d.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_0dc4d]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0dc4d.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/mips-linux-gnu-gcc  -v CMakeFiles/cmTC_0dc4d.dir/CMakeCCompilerABI.c.o -o cmTC_0dc4d ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/mips-linux-gnu-gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc-cross/mips-linux-gnu/12/lto-wrapper]
+        ignore line: [Target: mips-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 12.4.0-2ubuntu1~24.04' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libsanitizer --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --enable-libphobos-checking=release --without-target-system-zlib --enable-multiarch --disable-werror --enable-multilib --with-arch-32=mips32r2 --with-fp-32=xx --with-lxc1-sxc1=no --enable-targets=all --with-arch-64=mips64r2 --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=mips-linux-gnu --program-prefix=mips-linux-gnu- --includedir=/usr/mips-linux-gnu/include]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 12.4.0 (Ubuntu 12.4.0-2ubuntu1~24.04) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/:/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/:/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/:/lib/mips-linux-gnu/:/lib/../lib/:/usr/lib/mips-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0dc4d' '-march=mips32r2' '-mfpxx' '-mllsc' '-mno-lxc1-sxc1' '-mips32r2' '-mno-shared' '-EB' '-mabi=32' '-dumpdir' 'cmTC_0dc4d.']
+        link line: [ /usr/lib/gcc-cross/mips-linux-gnu/12/collect2 -plugin /usr/lib/gcc-cross/mips-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc-cross/mips-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGiyn8N.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -EB -mips32r2 --as-needed -dynamic-linker /lib/ld.so.1 -melf32btsmip -z relro -o cmTC_0dc4d /usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crt1.o /usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crti.o /usr/lib/gcc-cross/mips-linux-gnu/12/crtbegin.o -L/usr/lib/gcc-cross/mips-linux-gnu/12 -L/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib -L/lib/mips-linux-gnu -L/lib/../lib -L/usr/lib/mips-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib CMakeFiles/cmTC_0dc4d.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc-cross/mips-linux-gnu/12/crtend.o /usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crtn.o]
+          arg [/usr/lib/gcc-cross/mips-linux-gnu/12/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc-cross/mips-linux-gnu/12/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc-cross/mips-linux-gnu/12/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccGiyn8N.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--sysroot=/] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-EB] ==> ignore
+          arg [-mips32r2] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld.so.1] ==> ignore
+          arg [-melf32btsmip] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_0dc4d] ==> ignore
+          arg [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crt1.o] ==> obj [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crt1.o]
+          arg [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crti.o] ==> obj [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crti.o]
+          arg [/usr/lib/gcc-cross/mips-linux-gnu/12/crtbegin.o] ==> obj [/usr/lib/gcc-cross/mips-linux-gnu/12/crtbegin.o]
+          arg [-L/usr/lib/gcc-cross/mips-linux-gnu/12] ==> dir [/usr/lib/gcc-cross/mips-linux-gnu/12]
+          arg [-L/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib] ==> dir [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib]
+          arg [-L/lib/mips-linux-gnu] ==> dir [/lib/mips-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/mips-linux-gnu] ==> dir [/usr/lib/mips-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib] ==> dir [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib]
+          arg [CMakeFiles/cmTC_0dc4d.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc-cross/mips-linux-gnu/12/crtend.o] ==> obj [/usr/lib/gcc-cross/mips-linux-gnu/12/crtend.o]
+          arg [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crtn.o] ==> obj [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crtn.o]
+        collapse obj [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crt1.o] ==> [/usr/mips-linux-gnu/lib/crt1.o]
+        collapse obj [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crti.o] ==> [/usr/mips-linux-gnu/lib/crti.o]
+        collapse obj [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crtn.o] ==> [/usr/mips-linux-gnu/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc-cross/mips-linux-gnu/12] ==> [/usr/lib/gcc-cross/mips-linux-gnu/12]
+        collapse library dir [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib] ==> [/usr/mips-linux-gnu/lib]
+        collapse library dir [/lib/mips-linux-gnu] ==> [/lib/mips-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/mips-linux-gnu] ==> [/usr/lib/mips-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib] ==> [/usr/mips-linux-gnu/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/mips-linux-gnu/lib/crt1.o;/usr/mips-linux-gnu/lib/crti.o;/usr/lib/gcc-cross/mips-linux-gnu/12/crtbegin.o;/usr/lib/gcc-cross/mips-linux-gnu/12/crtend.o;/usr/mips-linux-gnu/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc-cross/mips-linux-gnu/12;/usr/mips-linux-gnu/lib;/lib/mips-linux-gnu;/lib;/usr/lib/mips-linux-gnu;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:19 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-BJj5pG"
+      binary: "/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-BJj5pG"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-BJj5pG'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_75f65/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_75f65.dir/build.make CMakeFiles/cmTC_75f65.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-BJj5pG'
+        Building CXX object CMakeFiles/cmTC_75f65.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/mips-linux-gnu-g++   -v -o CMakeFiles/cmTC_75f65.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/mips-linux-gnu-g++
+        Target: mips-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 12.4.0-2ubuntu1~24.04' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libsanitizer --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --enable-libphobos-checking=release --without-target-system-zlib --enable-multiarch --disable-werror --enable-multilib --with-arch-32=mips32r2 --with-fp-32=xx --with-lxc1-sxc1=no --enable-targets=all --with-arch-64=mips64r2 --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=mips-linux-gnu --program-prefix=mips-linux-gnu- --includedir=/usr/mips-linux-gnu/include
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 12.4.0 (Ubuntu 12.4.0-2ubuntu1~24.04) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_75f65.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=mips32r2' '-mfpxx' '-mllsc' '-mno-lxc1-sxc1' '-mips32r2' '-mno-shared' '-EB' '-mabi=32' '-dumpdir' 'CMakeFiles/cmTC_75f65.dir/'
+         /usr/lib/gcc-cross/mips-linux-gnu/12/cc1plus -quiet -v -imultiarch mips-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -D_TIME_BITS=64 -D_FILE_OFFSET_BITS=64 -meb -quiet -dumpdir CMakeFiles/cmTC_75f65.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=mips32r2 -mfpxx -mllsc -mno-lxc1-sxc1 -mips32r2 -mno-shared -mabi=32 -version -fstack-protector-strong -Wformat -Wformat-security -o /tmp/ccr98IPg.s
+        GNU C++17 (Ubuntu 12.4.0-2ubuntu1~24.04) version 12.4.0 (mips-linux-gnu)
+        	compiled by GNU C version 12.4.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/mips-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc-cross/mips-linux-gnu/12/include-fixed"
+        ignoring nonexistent directory "/usr/include/mips-linux-gnu"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/include/c++/12
+         /usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/include/c++/12/mips-linux-gnu
+         /usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/include/c++/12/backward
+         /usr/lib/gcc-cross/mips-linux-gnu/12/include
+         /usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/include
+         /usr/include
+        End of search list.
+        GNU C++17 (Ubuntu 12.4.0-2ubuntu1~24.04) version 12.4.0 (mips-linux-gnu)
+        	compiled by GNU C version 12.4.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 2359534d853d233fef4142f9dc2cc28e
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_75f65.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=mips32r2' '-mfpxx' '-mllsc' '-mno-lxc1-sxc1' '-mips32r2' '-mno-shared' '-EB' '-mabi=32' '-dumpdir' 'CMakeFiles/cmTC_75f65.dir/'
+         /usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/bin/as -v -EB -mips32r2 -O1 -mabi=32 -march=mips32r2 -mfpxx -mno-shared -KPIC -o CMakeFiles/cmTC_75f65.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccr98IPg.s
+        GNU assembler version 2.42 (mips-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/:/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/:/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/bin/
+        LIBRARY_PATH=/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/:/lib/mips-linux-gnu/:/lib/../lib/:/usr/lib/mips-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_75f65.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=mips32r2' '-mfpxx' '-mllsc' '-mno-lxc1-sxc1' '-mips32r2' '-mno-shared' '-EB' '-mabi=32' '-dumpdir' 'CMakeFiles/cmTC_75f65.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_75f65
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_75f65.dir/link.txt --verbose=1
+        /usr/bin/mips-linux-gnu-g++  -v CMakeFiles/cmTC_75f65.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_75f65 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/mips-linux-gnu-g++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc-cross/mips-linux-gnu/12/lto-wrapper
+        Target: mips-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 12.4.0-2ubuntu1~24.04' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libsanitizer --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --enable-libphobos-checking=release --without-target-system-zlib --enable-multiarch --disable-werror --enable-multilib --with-arch-32=mips32r2 --with-fp-32=xx --with-lxc1-sxc1=no --enable-targets=all --with-arch-64=mips64r2 --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=mips-linux-gnu --program-prefix=mips-linux-gnu- --includedir=/usr/mips-linux-gnu/include
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 12.4.0 (Ubuntu 12.4.0-2ubuntu1~24.04) 
+        COMPILER_PATH=/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/:/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/:/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/bin/
+        LIBRARY_PATH=/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/:/lib/mips-linux-gnu/:/lib/../lib/:/usr/lib/mips-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_75f65' '-shared-libgcc' '-march=mips32r2' '-mfpxx' '-mllsc' '-mno-lxc1-sxc1' '-mips32r2' '-mno-shared' '-EB' '-mabi=32' '-dumpdir' 'cmTC_75f65.'
+         /usr/lib/gcc-cross/mips-linux-gnu/12/collect2 -plugin /usr/lib/gcc-cross/mips-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc-cross/mips-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccX1aD5Q.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -EB -mips32r2 --as-needed -dynamic-linker /lib/ld.so.1 -melf32btsmip -z relro -o cmTC_75f65 /usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crt1.o /usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crti.o /usr/lib/gcc-cross/mips-linux-gnu/12/crtbegin.o -L/usr/lib/gcc-cross/mips-linux-gnu/12 -L/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib -L/lib/mips-linux-gnu -L/lib/../lib -L/usr/lib/mips-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib CMakeFiles/cmTC_75f65.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc-cross/mips-linux-gnu/12/crtend.o /usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_75f65' '-shared-libgcc' '-march=mips32r2' '-mfpxx' '-mllsc' '-mno-lxc1-sxc1' '-mips32r2' '-mno-shared' '-EB' '-mabi=32' '-dumpdir' 'cmTC_75f65.'
+        gmake[1]: Leaving directory '/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-BJj5pG'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:19 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/include/c++/12]
+          add: [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/include/c++/12/mips-linux-gnu]
+          add: [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/include/c++/12/backward]
+          add: [/usr/lib/gcc-cross/mips-linux-gnu/12/include]
+          add: [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/include/c++/12] ==> [/usr/mips-linux-gnu/include/c++/12]
+        collapse include dir [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/include/c++/12/mips-linux-gnu] ==> [/usr/mips-linux-gnu/include/c++/12/mips-linux-gnu]
+        collapse include dir [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/include/c++/12/backward] ==> [/usr/mips-linux-gnu/include/c++/12/backward]
+        collapse include dir [/usr/lib/gcc-cross/mips-linux-gnu/12/include] ==> [/usr/lib/gcc-cross/mips-linux-gnu/12/include]
+        collapse include dir [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/include] ==> [/usr/mips-linux-gnu/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/mips-linux-gnu/include/c++/12;/usr/mips-linux-gnu/include/c++/12/mips-linux-gnu;/usr/mips-linux-gnu/include/c++/12/backward;/usr/lib/gcc-cross/mips-linux-gnu/12/include;/usr/mips-linux-gnu/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:19 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(mips-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-BJj5pG']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_75f65/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_75f65.dir/build.make CMakeFiles/cmTC_75f65.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-BJj5pG']
+        ignore line: [Building CXX object CMakeFiles/cmTC_75f65.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/mips-linux-gnu-g++   -v -o CMakeFiles/cmTC_75f65.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/mips-linux-gnu-g++]
+        ignore line: [Target: mips-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 12.4.0-2ubuntu1~24.04' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libsanitizer --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --enable-libphobos-checking=release --without-target-system-zlib --enable-multiarch --disable-werror --enable-multilib --with-arch-32=mips32r2 --with-fp-32=xx --with-lxc1-sxc1=no --enable-targets=all --with-arch-64=mips64r2 --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=mips-linux-gnu --program-prefix=mips-linux-gnu- --includedir=/usr/mips-linux-gnu/include]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 12.4.0 (Ubuntu 12.4.0-2ubuntu1~24.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_75f65.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=mips32r2' '-mfpxx' '-mllsc' '-mno-lxc1-sxc1' '-mips32r2' '-mno-shared' '-EB' '-mabi=32' '-dumpdir' 'CMakeFiles/cmTC_75f65.dir/']
+        ignore line: [ /usr/lib/gcc-cross/mips-linux-gnu/12/cc1plus -quiet -v -imultiarch mips-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -D_TIME_BITS=64 -D_FILE_OFFSET_BITS=64 -meb -quiet -dumpdir CMakeFiles/cmTC_75f65.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=mips32r2 -mfpxx -mllsc -mno-lxc1-sxc1 -mips32r2 -mno-shared -mabi=32 -version -fstack-protector-strong -Wformat -Wformat-security -o /tmp/ccr98IPg.s]
+        ignore line: [GNU C++17 (Ubuntu 12.4.0-2ubuntu1~24.04) version 12.4.0 (mips-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.4.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/mips-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc-cross/mips-linux-gnu/12/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/include/mips-linux-gnu"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/include/c++/12]
+        ignore line: [ /usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/include/c++/12/mips-linux-gnu]
+        ignore line: [ /usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/include/c++/12/backward]
+        ignore line: [ /usr/lib/gcc-cross/mips-linux-gnu/12/include]
+        ignore line: [ /usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (Ubuntu 12.4.0-2ubuntu1~24.04) version 12.4.0 (mips-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.4.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 2359534d853d233fef4142f9dc2cc28e]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_75f65.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=mips32r2' '-mfpxx' '-mllsc' '-mno-lxc1-sxc1' '-mips32r2' '-mno-shared' '-EB' '-mabi=32' '-dumpdir' 'CMakeFiles/cmTC_75f65.dir/']
+        ignore line: [ /usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/bin/as -v -EB -mips32r2 -O1 -mabi=32 -march=mips32r2 -mfpxx -mno-shared -KPIC -o CMakeFiles/cmTC_75f65.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccr98IPg.s]
+        ignore line: [GNU assembler version 2.42 (mips-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/:/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/:/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/:/lib/mips-linux-gnu/:/lib/../lib/:/usr/lib/mips-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_75f65.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=mips32r2' '-mfpxx' '-mllsc' '-mno-lxc1-sxc1' '-mips32r2' '-mno-shared' '-EB' '-mabi=32' '-dumpdir' 'CMakeFiles/cmTC_75f65.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_75f65]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_75f65.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/mips-linux-gnu-g++  -v CMakeFiles/cmTC_75f65.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_75f65 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/mips-linux-gnu-g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc-cross/mips-linux-gnu/12/lto-wrapper]
+        ignore line: [Target: mips-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 12.4.0-2ubuntu1~24.04' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libsanitizer --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --enable-libphobos-checking=release --without-target-system-zlib --enable-multiarch --disable-werror --enable-multilib --with-arch-32=mips32r2 --with-fp-32=xx --with-lxc1-sxc1=no --enable-targets=all --with-arch-64=mips64r2 --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=mips-linux-gnu --program-prefix=mips-linux-gnu- --includedir=/usr/mips-linux-gnu/include]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 12.4.0 (Ubuntu 12.4.0-2ubuntu1~24.04) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/:/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/:/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc-cross/mips-linux-gnu/12/:/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/:/lib/mips-linux-gnu/:/lib/../lib/:/usr/lib/mips-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_75f65' '-shared-libgcc' '-march=mips32r2' '-mfpxx' '-mllsc' '-mno-lxc1-sxc1' '-mips32r2' '-mno-shared' '-EB' '-mabi=32' '-dumpdir' 'cmTC_75f65.']
+        link line: [ /usr/lib/gcc-cross/mips-linux-gnu/12/collect2 -plugin /usr/lib/gcc-cross/mips-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc-cross/mips-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccX1aD5Q.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -EB -mips32r2 --as-needed -dynamic-linker /lib/ld.so.1 -melf32btsmip -z relro -o cmTC_75f65 /usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crt1.o /usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crti.o /usr/lib/gcc-cross/mips-linux-gnu/12/crtbegin.o -L/usr/lib/gcc-cross/mips-linux-gnu/12 -L/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib -L/lib/mips-linux-gnu -L/lib/../lib -L/usr/lib/mips-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib CMakeFiles/cmTC_75f65.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc-cross/mips-linux-gnu/12/crtend.o /usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crtn.o]
+          arg [/usr/lib/gcc-cross/mips-linux-gnu/12/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc-cross/mips-linux-gnu/12/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc-cross/mips-linux-gnu/12/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccX1aD5Q.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-EB] ==> ignore
+          arg [-mips32r2] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld.so.1] ==> ignore
+          arg [-melf32btsmip] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_75f65] ==> ignore
+          arg [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crt1.o] ==> obj [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crt1.o]
+          arg [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crti.o] ==> obj [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crti.o]
+          arg [/usr/lib/gcc-cross/mips-linux-gnu/12/crtbegin.o] ==> obj [/usr/lib/gcc-cross/mips-linux-gnu/12/crtbegin.o]
+          arg [-L/usr/lib/gcc-cross/mips-linux-gnu/12] ==> dir [/usr/lib/gcc-cross/mips-linux-gnu/12]
+          arg [-L/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib] ==> dir [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib]
+          arg [-L/lib/mips-linux-gnu] ==> dir [/lib/mips-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/mips-linux-gnu] ==> dir [/usr/lib/mips-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib] ==> dir [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib]
+          arg [CMakeFiles/cmTC_75f65.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc-cross/mips-linux-gnu/12/crtend.o] ==> obj [/usr/lib/gcc-cross/mips-linux-gnu/12/crtend.o]
+          arg [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crtn.o] ==> obj [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crtn.o]
+        collapse obj [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crt1.o] ==> [/usr/mips-linux-gnu/lib/crt1.o]
+        collapse obj [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crti.o] ==> [/usr/mips-linux-gnu/lib/crti.o]
+        collapse obj [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib/crtn.o] ==> [/usr/mips-linux-gnu/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc-cross/mips-linux-gnu/12] ==> [/usr/lib/gcc-cross/mips-linux-gnu/12]
+        collapse library dir [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib/../lib] ==> [/usr/mips-linux-gnu/lib]
+        collapse library dir [/lib/mips-linux-gnu] ==> [/lib/mips-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/mips-linux-gnu] ==> [/usr/lib/mips-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc-cross/mips-linux-gnu/12/../../../../mips-linux-gnu/lib] ==> [/usr/mips-linux-gnu/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/mips-linux-gnu/lib/crt1.o;/usr/mips-linux-gnu/lib/crti.o;/usr/lib/gcc-cross/mips-linux-gnu/12/crtbegin.o;/usr/lib/gcc-cross/mips-linux-gnu/12/crtend.o;/usr/mips-linux-gnu/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc-cross/mips-linux-gnu/12;/usr/mips-linux-gnu/lib;/lib/mips-linux-gnu;/lib;/usr/lib/mips-linux-gnu;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:82 (check_include_file)"
+    checks:
+      - "Looking for sys/epoll.h"
+    directories:
+      source: "/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-e01DLH"
+      binary: "/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-e01DLH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Desktop/toxnet/toxcore-0.2.22/cmake"
+    buildResult:
+      variable: "HAVE_SYS_EPOLL_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-e01DLH'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_45ac3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_45ac3.dir/build.make CMakeFiles/cmTC_45ac3.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-e01DLH'
+        Building C object CMakeFiles/cmTC_45ac3.dir/CheckIncludeFile.c.o
+        /usr/bin/mips-linux-gnu-gcc    -o CMakeFiles/cmTC_45ac3.dir/CheckIncludeFile.c.o -c /home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-e01DLH/CheckIncludeFile.c
+        Linking C executable cmTC_45ac3
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45ac3.dir/link.txt --verbose=1
+        /usr/bin/mips-linux-gnu-gcc CMakeFiles/cmTC_45ac3.dir/CheckIncludeFile.c.o -o cmTC_45ac3 
+        gmake[1]: Leaving directory '/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-e01DLH'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:84 (check_symbol_exists)"
+    checks:
+      - "Looking for epoll_create"
+    directories:
+      source: "/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-HOnDR6"
+      binary: "/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-HOnDR6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Desktop/toxnet/toxcore-0.2.22/cmake"
+    buildResult:
+      variable: "HAVE_EPOLL_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-HOnDR6'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_07ce4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_07ce4.dir/build.make CMakeFiles/cmTC_07ce4.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-HOnDR6'
+        Building C object CMakeFiles/cmTC_07ce4.dir/CheckSymbolExists.c.o
+        /usr/bin/mips-linux-gnu-gcc    -o CMakeFiles/cmTC_07ce4.dir/CheckSymbolExists.c.o -c /home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-HOnDR6/CheckSymbolExists.c
+        Linking C executable cmTC_07ce4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07ce4.dir/link.txt --verbose=1
+        /usr/bin/mips-linux-gnu-gcc CMakeFiles/cmTC_07ce4.dir/CheckSymbolExists.c.o -o cmTC_07ce4 
+        gmake[1]: Leaving directory '/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-HOnDR6'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "cmake/Dependencies.cmake:4 (find_package)"
+      - "CMakeLists.txt:191 (include)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-jXCPb7"
+      binary: "/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-jXCPb7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Desktop/toxnet/toxcore-0.2.22/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-jXCPb7'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_683d5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_683d5.dir/build.make CMakeFiles/cmTC_683d5.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-jXCPb7'
+        Building C object CMakeFiles/cmTC_683d5.dir/src.c.o
+        /usr/bin/mips-linux-gnu-gcc -DCMAKE_HAVE_LIBC_PTHREAD  -std=c11 -o CMakeFiles/cmTC_683d5.dir/src.c.o -c /home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-jXCPb7/src.c
+        Linking C executable cmTC_683d5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_683d5.dir/link.txt --verbose=1
+        /usr/bin/mips-linux-gnu-gcc CMakeFiles/cmTC_683d5.dir/src.c.o -o cmTC_683d5 
+        gmake[1]: Leaving directory '/home/vboxuser/Desktop/toxnet/toxcore_build_mips/CMakeFiles/CMakeScratch/TryCompile-jXCPb7'
+        
+      exitCode: 0
+...

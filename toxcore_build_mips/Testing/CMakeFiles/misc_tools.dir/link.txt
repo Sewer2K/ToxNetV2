@@ -1,0 +1,2 @@
+/usr/bin/mips-linux-gnu-ar qc libmisc_tools.a CMakeFiles/misc_tools.dir/misc_tools.c.o
+/usr/bin/mips-linux-gnu-ranlib libmisc_tools.a

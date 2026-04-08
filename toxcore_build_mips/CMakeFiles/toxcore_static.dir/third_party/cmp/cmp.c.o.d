@@ -1,0 +1,25 @@
+CMakeFiles/toxcore_static.dir/third_party/cmp/cmp.c.o: \
+ /home/vboxuser/Desktop/toxnet/toxcore-0.2.22/third_party/cmp/cmp.c \
+ /usr/mips-linux-gnu/include/stdc-predef.h \
+ /home/vboxuser/Desktop/toxnet/toxcore-0.2.22/third_party/cmp/cmp.h \
+ /usr/lib/gcc-cross/mips-linux-gnu/12/include/stdbool.h \
+ /usr/lib/gcc-cross/mips-linux-gnu/12/include/stddef.h \
+ /usr/lib/gcc-cross/mips-linux-gnu/12/include/stdint.h \
+ /usr/mips-linux-gnu/include/stdint.h \
+ /usr/mips-linux-gnu/include/bits/libc-header-start.h \
+ /usr/mips-linux-gnu/include/features.h \
+ /usr/mips-linux-gnu/include/features-time64.h \
+ /usr/mips-linux-gnu/include/bits/wordsize.h \
+ /usr/mips-linux-gnu/include/sgidefs.h \
+ /usr/mips-linux-gnu/include/bits/timesize.h \
+ /usr/mips-linux-gnu/include/sys/cdefs.h \
+ /usr/mips-linux-gnu/include/bits/long-double.h \
+ /usr/mips-linux-gnu/include/gnu/stubs.h \
+ /usr/mips-linux-gnu/include/gnu/stubs-o32_hard.h \
+ /usr/mips-linux-gnu/include/bits/types.h \
+ /usr/mips-linux-gnu/include/bits/typesizes.h \
+ /usr/mips-linux-gnu/include/bits/time64.h \
+ /usr/mips-linux-gnu/include/bits/wchar.h \
+ /usr/mips-linux-gnu/include/bits/stdint-intn.h \
+ /usr/mips-linux-gnu/include/bits/stdint-uintn.h \
+ /usr/mips-linux-gnu/include/bits/stdint-least.h

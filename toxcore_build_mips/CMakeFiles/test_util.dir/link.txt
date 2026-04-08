@@ -1,0 +1,2 @@
+/usr/bin/mips-linux-gnu-ar qc libtest_util.a CMakeFiles/test_util.dir/toxcore/DHT_test_util.cc.o CMakeFiles/test_util.dir/toxcore/crypto_core_test_util.cc.o CMakeFiles/test_util.dir/toxcore/ev_test_util.cc.o CMakeFiles/test_util.dir/toxcore/mono_time_test_util.cc.o CMakeFiles/test_util.dir/toxcore/network_test_util.cc.o CMakeFiles/test_util.dir/toxcore/sort_test_util.cc.o CMakeFiles/test_util.dir/toxcore/test_util.cc.o
+/usr/bin/mips-linux-gnu-ranlib libtest_util.a

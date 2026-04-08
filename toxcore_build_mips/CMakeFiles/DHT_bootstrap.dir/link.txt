@@ -1,0 +1,1 @@
+/usr/bin/mips-linux-gnu-gcc CMakeFiles/DHT_bootstrap.dir/other/DHT_bootstrap.c.o CMakeFiles/DHT_bootstrap.dir/other/bootstrap_node_packets.c.o -o DHT_bootstrap  libtoxcore.a testing/libmisc_tools.a libtoxcore.a 

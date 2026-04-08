@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/support.dir/doubles/fake_network_stack.cc.o"
+  "CMakeFiles/support.dir/doubles/fake_network_stack.cc.o.d"
+  "CMakeFiles/support.dir/doubles/fake_sockets.cc.o"
+  "CMakeFiles/support.dir/doubles/fake_sockets.cc.o.d"
+  "CMakeFiles/support.dir/doubles/network_universe.cc.o"
+  "CMakeFiles/support.dir/doubles/network_universe.cc.o.d"
+  "CMakeFiles/support.dir/src/clock.cc.o"
+  "CMakeFiles/support.dir/src/clock.cc.o.d"
+  "CMakeFiles/support.dir/src/environment.cc.o"
+  "CMakeFiles/support.dir/src/environment.cc.o.d"
+  "CMakeFiles/support.dir/src/fake_clock.cc.o"
+  "CMakeFiles/support.dir/src/fake_clock.cc.o.d"
+  "CMakeFiles/support.dir/src/fake_memory.cc.o"
+  "CMakeFiles/support.dir/src/fake_memory.cc.o.d"
+  "CMakeFiles/support.dir/src/fake_random.cc.o"
+  "CMakeFiles/support.dir/src/fake_random.cc.o.d"
+  "CMakeFiles/support.dir/src/fuzz_helpers.cc.o"
+  "CMakeFiles/support.dir/src/fuzz_helpers.cc.o.d"
+  "CMakeFiles/support.dir/src/memory.cc.o"
+  "CMakeFiles/support.dir/src/memory.cc.o.d"
+  "CMakeFiles/support.dir/src/network.cc.o"
+  "CMakeFiles/support.dir/src/network.cc.o.d"
+  "CMakeFiles/support.dir/src/random.cc.o"
+  "CMakeFiles/support.dir/src/random.cc.o.d"
+  "CMakeFiles/support.dir/src/simulated_environment.cc.o"
+  "CMakeFiles/support.dir/src/simulated_environment.cc.o.d"
+  "CMakeFiles/support.dir/src/simulation.cc.o"
+  "CMakeFiles/support.dir/src/simulation.cc.o.d"
+  "CMakeFiles/support.dir/src/tox_network.cc.o"
+  "CMakeFiles/support.dir/src/tox_network.cc.o.d"
+  "CMakeFiles/support.dir/src/tox_runner.cc.o"
+  "CMakeFiles/support.dir/src/tox_runner.cc.o.d"
+  "libsupport.a"
+  "libsupport.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/support.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
