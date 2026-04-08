@@ -395,7 +395,7 @@ sudo ./tor.sh
 3. Note your Tox ID displayed in the console
 4. Add this Tox ID as a friend in any Tox client (qTox, uTox, etc.)
 5. Send commands as friend messages
-
+6. Don't be a retard.
 ---
 ## 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
