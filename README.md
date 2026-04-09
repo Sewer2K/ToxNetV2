@@ -330,11 +330,39 @@ sudo apt install -y build-essential git curl wget
 # Install libsodium and toxcore dependencies
 sudo apt install -y libsodium-dev libsodium23 libtool autoconf automake cmake pkg-config
 
-# Install cross-compilation toolchains
+
+# Install cross-compilation toolchains DO THIS PART AFTER CLONING REPO OR C2 WONT BUILD
+cd ToxNetV2
+cd toxcore-0.2.22
+./autogen.sh
+./configure
+make
+sudo make install
+sudo ldconfig
+cd ..
+
+RUN THIS OR BINIRES WILL FAIL BUILDING
+sudo apt update
+sudo apt install -y \
+    gcc-i686-linux-gnu \
+    g++-i686-linux-gnu \
+    gcc-mips64el-linux-gnuabi64 \
+    g++-mips64el-linux-gnuabi64 \
+    gcc-powerpc64le-linux-gnu \
+    g++-powerpc64le-linux-gnu \
+    gcc-s390x-linux-gnu \
+    g++-s390x-linux-gnu \
+    libc6-dev-i386 \
+    libc6-dev-mips64el-cross \
+    libc6-dev-ppc64el-cross \
+    libc6-dev-s390x-cross
+
+Then do
 ./Xcompiletools.sh for a simple all in one crosscompiler install or manually.
 sudo apt install -y gcc-aarch64-linux-gnu gcc-arm-linux-gnueabi gcc-arm-linux-gnueabihf \
                     gcc-mips-linux-gnu gcc-mipsel-linux-gnu gcc-mips64el-linux-gnuabi64 \
                     gcc-powerpc64le-linux-gnu gcc-s390x-linux-gnu gcc-i686-linux-gnu
+
 
 # Install Tor for anonymity (optional but recommended)
 sudo apt install -y tor
@@ -365,7 +393,7 @@ Adjust package manager commands accordingly (yum, dnf, pacman, etc.).
    go build -o toxnet-c2 main.go
    ```
 
-5. **Set up cross-compilation libraries:**
+5. **Set up cross-compilation libraries:** ONLY IF BUILDS FAIL OTHERWISE DONT RUN
    ```bash
    # Run the cross-compilation setup script
    ./xcompile_libs.sh
